@@ -37,6 +37,10 @@ opt.splitbelow = true
 opt.cmdheight = 0
 
 opt.fillchars = [[eob: ,fold: ,foldopen:,foldsep: ,foldclose:]]
+vim.schedule(function()
+  vim.o.clipboard = 'unnamedplus'
+end)
+vim.cmd.colorscheme 'tokyonight-moon'
 --opt.colorcolumn = '100'
 
 -- Configure Neovim diagnostic messages
